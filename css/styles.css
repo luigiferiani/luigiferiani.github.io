@@ -11386,6 +11386,15 @@ p.lead {
     display: block;
   }
 }
+
+@media (max-width:991px){
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.2);
+  }
+}
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -11397,10 +11406,12 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
+
 .social-icons .social-icon:hover {
   background-color: #003459;
 }
@@ -11408,6 +11419,22 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
 }
+
+@media only screen and (min-width:576px) {
+  .brlguphidden {
+      display: none;
+  }
+}
+@media only screen and (max-width:576px) {
+  .social-icons .social-icon:nth-child(4n-1) {
+    margin-right: 0;
+}
+}
+/* @media only screen and (min-width: 576px) {
+  .brsmuphidden {
+      display: none;
+  }
+} */
 
 section.resume-section {
   display: flex;
